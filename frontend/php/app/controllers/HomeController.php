@@ -9,11 +9,16 @@ require_once APP_PATH . '/core/BaseController.php';
 class HomeController extends BaseController {
     
     /**
-     * Show home page (redirect to login or notes)
+     * Show home page (landing page)
      */
     public function index() {
-        // In a real app, we'd check auth here
-        // For now, just redirect to login
-        $this->redirect('/login');
+        // Check if user is already logged in
+        if (isset($_SESSION['token'])) {
+            $this->redirect('/notes');
+            return;
+        }
+        
+        // Show landing page
+        $this->view('home/index');
     }
 }

@@ -5,10 +5,11 @@
         <!-- Header -->
         <div style="text-align: center; margin-bottom: 2rem;" class="fade-in">
             <div style="margin-bottom: 1rem;">
-                <i class="bi bi-person-plus-fill" style="font-size: 3.5rem; background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)) 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                <div style="font-size: 3rem; margin-bottom: 0.5rem;">☁️✨</div>
+                <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">PuffyVault</h2>
             </div>
             <h1 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.025em;">Create Account</h1>
-            <p class="text-muted text-sm">Sign up to start securing your notes</p>
+            <p class="text-muted text-sm">Join the cloud and start securing your notes ☁️</p>
         </div>
 
         <!-- Form Card -->

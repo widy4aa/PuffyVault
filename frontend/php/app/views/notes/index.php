@@ -4,8 +4,8 @@
 <nav class="navbar-minimal" style="padding: 1rem 0;">
     <div class="container flex items-center justify-between">
         <a href="<?= BASE_URL ?>/notes" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: hsl(var(--foreground));">
-            <i class="bi bi-shield-lock-fill" style="font-size: 1.75rem; color: hsl(var(--primary));"></i>
-            <span class="font-bold" style="font-size: 1.25rem;">Secure Notes</span>
+            <span style="font-size: 1.75rem;">☁️🔒</span>
+            <span class="font-bold" style="font-size: 1.25rem;">PuffyVault</span>
         </a>
 
         <div class="flex items-center gap-2">
@@ -31,10 +31,10 @@
             <div class="flex justify-between items-center" style="flex-wrap: wrap; gap: 1rem;">
                 <div>
                     <h1 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 0.25rem; letter-spacing: -0.025em;">
-                        <i class="bi bi-journal-lock" style="margin-right: 0.5rem; color: hsl(var(--primary));"></i>
+                        <i class="bi bi-cloud-fill" style="margin-right: 0.5rem; color: hsl(var(--primary));"></i>
                         My Secure Notes
                     </h1>
-                    <p class="text-muted text-sm" style="margin: 0;">End-to-end encrypted notes</p>
+                    <p class="text-muted text-sm" style="margin: 0;">Your thoughts, encrypted & puffy safe ☁️</p>
                 </div>
                 <a href="<?= BASE_URL ?>/notes/create" class="btn-minimal btn-primary-minimal">
                     <i class="bi bi-plus-lg"></i>

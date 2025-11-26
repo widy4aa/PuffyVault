@@ -1,6 +1,8 @@
-# SECURE NOTES API - TESTING GUIDE
+# 🧪 PuffyVault API - Testing Guide
 
-## Quick Start
+> Test your puffy cloud sanctuary with Postman & cURL ☁️✨
+
+## 🚀 Quick Start
 
 ### 1. Install Dependencies
 ```bash

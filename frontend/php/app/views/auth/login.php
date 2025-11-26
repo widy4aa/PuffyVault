@@ -5,10 +5,11 @@
         <!-- Header -->
         <div style="text-align: center; margin-bottom: 2rem;" class="fade-in">
             <div style="margin-bottom: 1rem;">
-                <i class="bi bi-shield-lock-fill" style="font-size: 3.5rem; background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)) 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                <div style="font-size: 3rem; margin-bottom: 0.5rem;">☁️🔒</div>
+                <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">PuffyVault</h2>
             </div>
             <h1 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.025em;">Welcome Back</h1>
-            <p class="text-muted text-sm">Sign in to access your secure notes</p>
+            <p class="text-muted text-sm">Sign in to access your secure notes ☁️</p>
         </div>
 
         <!-- Form Card -->
