@@ -2,6 +2,13 @@
 Database initialization script
 Run this to create all tables
 """
+import os
+import sys
+
+# Add backend directory to path
+backend_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend')
+sys.path.insert(0, backend_path)
+
 from app.main import app
 from app.database import db
 

@@ -53,17 +53,28 @@ python -m venv venv
 
 # Install dependencies
 pip install flask flask-cors flask-sqlalchemy psycopg2-binary sqlalchemy pyjwt bcrypt python-dotenv pydantic email-validator
+```
 
-# Setup database
+3. **Setup Database**
+```bash
+cd database
+
+# Create tables
 python create_tables.py
 
-# Run backend server
+# (Optional) Insert dummy data for testing
+python seed_data.py
+```
+
+4. **Run Backend Server**
+```bash
+cd backend
 python run.py
 ```
 
 Backend akan berjalan di **http://localhost:5000**
 
-3. **Setup Frontend**
+5. **Run Frontend Server**
 ```bash
 cd frontend/php
 
@@ -109,28 +120,46 @@ Frontend akan berjalan di **http://localhost:8000**
 
 ```
 PuffyVault/
-├── backend/                    # Flask API
+├── backend/                    # Flask API Backend
 │   ├── app/
 │   │   ├── routes/            # API endpoints
 │   │   ├── models/            # Database models
+│   │   ├── services/          # Business logic
+│   │   ├── middleware/        # Auth & error handlers
 │   │   ├── utils/             # Security utilities
 │   │   └── main.py            # Flask app
-│   ├── run.py                 # Entry point
+│   ├── tests/                 # Unit & integration tests
+│   ├── run.py                 # Server entry point
 │   └── requirements.txt
 │
 ├── frontend/                   # PHP Frontend
 │   └── php/
 │       ├── app/
 │       │   ├── controllers/   # MVC Controllers
-│       │   ├── models/        # API Client
-│       │   └── views/         # Blade-like templates
-│       └── public/
-│           ├── assets/
-│           │   ├── css/       # Minimal.css
-│           │   └── js/        # Encryption.js
-│           └── index.php
+│       │   ├── models/        # API Client wrappers
+│       │   ├── views/         # Templates
+│       │   └── core/          # Router & base
+│       ├── public/
+│       │   ├── assets/
+│       │   │   ├── css/       # Minimal.css
+│       │   │   └── js/        # Encryption.js
+│       │   └── index.php
+│       └── config/
 │
-└── srs                        # Software Requirements Specification
+├── database/                   # Database Setup Scripts
+│   ├── create_tables.py       # Create DB tables
+│   ├── init_db.py             # Initialize database
+│   ├── migrations.py          # SQL migrations
+│   ├── seed_data.py           # Dummy data for testing
+│   └── README.md
+│
+└── docs/                       # Documentation
+    ├── srs                    # Software Requirements Spec
+    ├── BACKEND_README.md      # Backend documentation
+    ├── FRONTEND_README.md     # Frontend documentation
+    ├── PENJELASAN_KODE.md     # Code explanation (Bahasa)
+    ├── TESTING_GUIDE.md       # Testing guide
+    └── Secure_Notes_API.postman_collection.json
 ```
 
 ## 🔒 API Endpoints
